@@ -260,5 +260,9 @@ margin-bottom: 160px;
 }
 .gal{
 	font-size: 100px;
+	
+}
+
+.gal h1{
 	color: red;
 }
