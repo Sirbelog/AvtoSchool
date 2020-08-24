@@ -258,11 +258,66 @@ margin-bottom: 160px;
 .price__info p {
 	font-size: 35px;
 }
-.gal{
-	font-size: 100px;
-	
+
+
+/*     ГАЛЕРЕЯ      */
+
+.gallery{
+	margin-bottom: 150px;
 }
 
-.gal h1{
-	color: black;
+.gallery__title{
+	font-size: 75px;
+	text-align: center;
+	margin-bottom: 100px;
+	border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
+	padding-bottom: 50px;	
+}
+
+.gallery__title h2{
+	
+	color:#2F4F4F;
+	text-shadow:none;
+}
+
+.gallery__list{
+	position: relative;
+	height: 600px;
+}
+
+.gallery__list img{
+	position: absolute;
+	width: 70%;
+	left:50%;
+	margin-left:-35%;
+	opacity: 0;
+	height:100%;
+	border-radius: 25px;
+	transition: opacity 1.5s;
+}
+
+.gallery__list .gallery__main{
+	opacity: 1;
+}
+
+#next__button{
+position: absolute;
+right:50px;
+font-size:150px;
+color:#2F4F4F;
+top:200px;
+}
+
+#prev__button{
+	position: absolute;
+	left:50px;
+	font-size:150px;
+	color:#2F4F4F;
+	top:200px;
+}
+
+#next__button:hover,#prev__button:hover{
+color:orange;
+cursor: pointer;
+font-weight: 600;
 }
