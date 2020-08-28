@@ -7,7 +7,7 @@
 
 body {
 	background-color: #F0FFF0	;
-	text-shadow: #000 0 2px;
+
 }
 
 .container {
@@ -282,14 +282,14 @@ margin-bottom: 160px;
 
 .gallery__list{
 	position: relative;
-	height: 600px;
+	height: 700px;
 }
 
 .gallery__list img{
 	position: absolute;
-	width: 70%;
+	width: 90%;
 	left:50%;
-	margin-left:-35%;
+	margin-left:-45%;
 	opacity: 0;
 	height:100%;
 	border-radius: 25px;
@@ -302,22 +302,92 @@ margin-bottom: 160px;
 
 #next__button{
 position: absolute;
-right:50px;
+right:70px;
 font-size:150px;
-color:#2F4F4F;
-top:200px;
+color:white;
+top:270px;
+z-index: 10;
+text-shadow: black 0px 0px 5px ;
+user-select: none;
 }
 
 #prev__button{
 	position: absolute;
-	left:50px;
+	left:70px;
 	font-size:150px;
-	color:#2F4F4F;
-	top:200px;
+	color:white;
+	top:270px;
+	z-index: 10;
+	text-shadow: black 0px 0px 5px ;
+	user-select: none;
 }
 
 #next__button:hover,#prev__button:hover{
 color:orange;
 cursor: pointer;
-font-weight: 600;
+}
+
+.gallery__mini{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.gallery__mini-container{
+	position: absolute;
+	bottom: 15px;
+	background-color:rgba(000, 000, 000, 0.7);
+	width: 90%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+.gallery__mini img{
+	width: 100px;
+	height:100px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+/*---------Дополнительные материалы---------*/
+
+.extra{
+
+}
+
+.extra__title{
+	font-size: 75px;
+	text-align: center;
+	margin-bottom: 100px;
+	border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
+	padding-bottom: 50px;	
+}
+
+.extra__title h2{
+	color:#2F4F4F;
+	text-shadow:none;
+}
+
+.extra__container{
+
+}
+
+.extra__list{
+background-color: #e1f2e8;
+padding:30px;
+}
+
+.extra__list li a{
+	color:#88c9b3;
+	text-decoration:none;
+	font-size:40px;
+	line-height: 1.5em;
+	letter-spacing: 3px;
+	border-bottom: dotted 3px ;
+}
+
+.extra__list li a:hover{
+	color:#2E8B57;
 }

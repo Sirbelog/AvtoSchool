@@ -8,34 +8,19 @@
 </head>
 <body>
 	
-	
-	<select id="select">
-		<option value="0">Январь</option>
-		<option value="1">Февраль</option>
-		<option value="2">Март</option>
-		<option value="3">Апрель</option>
-		<option value="4">Май</option>
-		<option value="5">Июнь</option>
-		<option value="6">Июль</option>
-		<option value="7">Август</option>
-		<option value="8">Сентябрь</option>
-		<option value="9">Октябрь</option>
-		<option value="10">Ноябрь</option>
-		<option value="11">Декабрь</option>
-	</select>
+
+	<input type="button" id="elem" value ="2">
+
 	
 
 	<script>
-	let options = document.querySelectorAll('#select option');
-	let month = new Date().getMonth();
+
+		let elem = addEventListener("click",function(){
+			setInterval(this)
+			
+		})
+
 		
-		for(let option of options)
-		{
-			if(option.value == month){
-				option.selected = true;
-			}
-		}
-	
 
 	</script>
 </body>
