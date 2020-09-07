@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>СуперРПГ</title>
+	<link rel="stylesheet" href="script.css">
+</head>
+<body>
+<!-- <div class="container">
+<div class="menu">
+	<h1>Белогорск фэнтези</h1>
+	<div class="menu__list">
+		<p>Играть</p>
+		<p>Выбор персонажа</p>
+		<p>Выбор арены</p>
+		<p>Опции</p>
+		<p>Выход</p>
+	</div>
+</div>
+</div> -->
+
+<div id="parent"></div>
+<p id = "p"></p>
+
+	<script>
+
+	let parent = document.querySelector("#parent")	
+	let p = document.querySelector("#p")	
+
+	for(let i = 1; i<=5;i++){
+		let input = document.createElement("input");
+		parent.appendChild(input);
+		input.addEventListener('blur',function(){
+			p.innerHTML = input.value;
+		});
+		
+	}
+
+	</script>
+</body>
+</html>
