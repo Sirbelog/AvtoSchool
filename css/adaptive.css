@@ -81,7 +81,7 @@
 		z-index: 100;
 		top:0;
 		left:0;
-		height:100%;
+		height: 100vh;
 	}
 
 
@@ -214,6 +214,14 @@
 		font-size: 20px;
 	}
 
+	.header__menu-button a {
+		width:auto;
+		margin:0 auto;
+		font-size: 30px;
+		margin-bottom: 40px;
+		letter-spacing: 0.1em;
+	}
+
 
 	.about{
 		margin-bottom:120px;
@@ -287,7 +295,7 @@
 @media screen and (max-width: 575px) {
 	
 	.title{
-		font-size: 37px;
+		font-size: 34px;
 		margin-bottom: 60px;
 	}
 
@@ -325,7 +333,5 @@
 		font-size:15px;
 	}
 
-	.extra__list{
-		max-width: 100%;
-	}
+
 }
