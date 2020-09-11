@@ -38,11 +38,58 @@
 
 	.header__menu{
 		display: none;
+		
 	}
 
-	.menu__button{
-		display: block;
+	.header__menu-button{
+		display:flex;
+		flex-direction: column;
+		padding: 80px 12% 80px;
+		text-align: center;
 	}
+
+	.header__menu-button p {
+		font-size: 50px;
+		text-align: right;
+		margin-left: auto;
+		cursor: pointer;
+		color:red;
+		margin-bottom:40px;
+	}
+
+	.header__menu-button a {
+		width:auto;
+		margin:0 auto;
+		font-size: 35px;
+		margin-bottom: 40px;
+		letter-spacing: 0.2em;
+	}
+
+	.header__menu-button a:hover{
+		color:orange;
+	}
+
+	.active__menu{
+		visibility: visible;
+	}
+
+	.menu__container{
+		display: block;
+		background-color:rgba(00,00,00,0.9);
+		width: 100%;
+		position: absolute;
+		z-index: 100;
+		top:0;
+		left:0;
+		height:100vh;
+	}
+
+
+	.menu__button{
+	display: block;
+	}
+
+
 
 	.about__container{
 		

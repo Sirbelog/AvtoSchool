@@ -52,10 +52,7 @@ function nextSlide(){
 
 
 
-
-
-
-//------Анимация--------
+//------АНИМАЦИЯ--------
 
 let animation = document.querySelectorAll('.animation');  //задаем класс для анимаций
 
@@ -97,4 +94,44 @@ if(animation.length > 0){       //проверка существуют ли т�
 	setTimeout(() =>{scrollAnim();},700);
 	
 }
+
+
+
+//------МЕНЮШКИ--------
+
+let burgerButton = document.querySelector('.menu__button');
+let burger = document.querySelector(".menu__container");
+let menuClose = document.querySelector("#menu-close");
+let menuchoise = document.querySelectorAll("#menuchoise");
+
+
+burgerButton.addEventListener('click', function(){
+	burger.classList.toggle("active__menu");
+	document.body.style.overflow = "hidden"
+	
+})
+
+menuClose.addEventListener('click', function(){
+	burger.classList.remove('active__menu');
+	document.body.style.overflow = ""
+})
+
+
+for (let i = 0;i<menuchoise.length;i++){
+	let button = menuchoise[i];
+	button.addEventListener("click", function(){
+		burger.classList.remove('active__menu');
+	document.body.style.overflow = ""
+	})
+	console.log(menuchoise[i])
+}
+
+
+
+// if(window.pageYOffset >=100)
+// 	{
+// 		alert('awdw')
+// 		burger.classList.remove('active__menu');
+// 		document.body.style.overflow = ""
+// 	}
 
