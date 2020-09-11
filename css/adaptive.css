@@ -320,4 +320,12 @@
 		font-size:20px;
 		line-height: 1.2em;
 	}
+
+	.extra__list p{
+		font-size:15px;
+	}
+
+	.extra__list{
+		max-width: 100%;
+	}
 }
