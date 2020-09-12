@@ -197,12 +197,16 @@
 		line-height: 1.4em;
 	}
 
-	.header__title{
-		font-size:38px;
+	.header__title h1{
+		font-size:50px;
 	}
 
 	.header__title h2{
 		font-size: 28px;
+	}
+	.header__title h2 span{
+		font-size: 32px;
+		color:#FF4500;
 	}
 
 	.header__container-logo img{
@@ -288,6 +292,14 @@
 		width: 60%;
 	}
 
+	.scrollup{
+		right:20px;
+	}
+
+	.scrollup img{
+		width: 65px;
+		}
+
 }
 
 
@@ -299,8 +311,17 @@
 		margin-bottom: 60px;
 	}
 
+	.header__title h1{
+		font-size:40px;
+	}
+
 	.header__container-phone{
 		padding-left: 0;
+	}
+
+	.header__container-logo img{
+		width: 220px;
+		margin-bottom: -15px
 	}
 
 	.about__text h3{
@@ -333,5 +354,8 @@
 		font-size:15px;
 	}
 
+	.scrollup img{
+		width: 50px;
+		}
 
 }

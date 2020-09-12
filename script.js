@@ -123,7 +123,7 @@ for (let i = 0;i<menuchoise.length;i++){
 		burger.classList.remove('active__menu');
 	document.body.style.overflow = ""
 	})
-	console.log(menuchoise[i])
+
 }
 
 
@@ -134,4 +134,31 @@ for (let i = 0;i<menuchoise.length;i++){
 // 		burger.classList.remove('active__menu');
 // 		document.body.style.overflow = ""
 // 	}
+
+
+// ----------Кнопка наверх--------
+
+
+window.onscroll =function() {scrollup()};
+
+let upbutton = document.querySelector(".scrollup")
+let scrollTop = document.body.scrollTop;
+
+function scrollup(){
+
+	if(window.pageYOffset>1200){
+		upbutton.style.display = "block";
+	}else{
+		upbutton.style.display = "none";
+	}
+
+}
+
+upbutton.addEventListener("click",function(){
+	document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+})
+
+scrollup();
+
+
 
